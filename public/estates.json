@@ -1,0 +1,51 @@
+[
+  {
+    "estate_title": "Luxury Villa in Beverly Hills",
+    "id": "1",
+    "segment_name": "Luxury",
+    "description": "A stunning luxury villa with breathtaking views of the city.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "5000 sqft",
+    "location": "Beverly Hills, CA",
+    "facilities": ["living room", "swimming pool", "kitchen", "gym", "garden"],
+    "image": "/public/img1.jpg"
+  },
+  {
+    "estate_title": "Modern Apartment in New York",
+    "id": "2",
+    "segment_name": "Modern",
+    "description": "A contemporary apartment located in the heart of New York City.",
+    "price": "$3,200/month",
+    "status": "rent",
+    "area": "1200 sqft",
+    "location": "Manhattan, NY",
+    "facilities": ["living room", "swimming pool", "kitchen", "gym", "balcony"],
+    "image": "/public/img2.jpg"
+
+  },
+  {
+    "estate_title": "Cozy Cottage in the Countryside",
+    "id": "3",
+    "segment_name": "Cottage",
+    "description": "A charming cottage surrounded by nature and serenity.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "1500 sqft",
+    "location": "Asheville, NC",
+    "facilities": ["living room", "kitchen", "garden", "fireplace", "deck"],
+    "image": "/public/img3.jpg"
+  },
+  {
+    "estate_title": "Beachfront Condo in Miami",
+    "id": "4",
+    "segment_name": "Beachfront",
+    "description": "A beautiful condo with a stunning view of the ocean.",
+    "price": "$4,500/month",
+    "status": "rent",
+    "area": "1800 sqft",
+    "location": "Miami Beach, FL",
+    "facilities": ["living room", "swimming pool", "kitchen", "balcony", "private beach access"],
+    "image": "/public/img4.jpg"
+  }
+]
