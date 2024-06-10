@@ -37,7 +37,7 @@ const Estate = () => {
         getEstate();
     }, [id]);
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <div>Loading......</div>;
     if (error) return <div>{error}</div>;
 
     if (!estate) return <div>No estate found</div>;
