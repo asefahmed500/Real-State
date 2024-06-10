@@ -1,12 +1,15 @@
-
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-// Function to fetch estate details by ID from the JSON file
+// Separate API function
 const fetchEstateById = async (id) => {
     const response = await fetch('/estates.json');
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
     const data = await response.json();
-    return data[id];
+    // Convert the id to a string to ensure matching
+    return data.find(estate => estate.id === id);
 };
 
 const Estate = () => {
@@ -25,6 +28,7 @@ const Estate = () => {
                     setError('Estate not found');
                 }
             } catch (err) {
+                console.error(err); // Log the actual error
                 setError('Failed to fetch estate details');
             } finally {
                 setLoading(false);
@@ -41,8 +45,7 @@ const Estate = () => {
     const { estate_title, image, description, price, facilities } = estate;
 
     return (
-        <div className='flex justify-center items-center min-h-screen'>
-         
+        <div className="flex justify-center items-center min-h-screen">
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={image} alt={estate_title} /></figure>
                 <div className="card-body">
